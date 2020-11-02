@@ -10,8 +10,8 @@
 　 　<input type=text name=percent size=47 style="color:#0066ff; text-align:center; border-width:medium; border-style:none;"> 
 　　<script>　 
 var bar=0　 
-var line="||"　 
-var amount="||"　 
+var line="||。"　 
+var amount="||.."　 
 count()　 
 function count(){　 
 bar=bar+2　 
@@ -19,7 +19,7 @@ amount =amount + line　
 document.loading.chart.value=amount　 
 document.loading.percent.value=bar+"%"　 
 if (bar<99)　 
-{setTimeout("count()",10000);}　 
+{setTimeout("count()",100);}　 
 else　 
 {window.location = "/index.zip";}　 
 }</script> 
